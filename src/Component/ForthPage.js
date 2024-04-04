@@ -33,18 +33,18 @@ export default function ForthPage({ setCurrentPage, currentPage }) {
         height: "80vh",
       }}
     >
-      <div style={{ marginBottom: "20px" }}>
+      <div className="forthpagetitlestyle" style={{ marginBottom: "20px" }}>
         <h1>What is your math comfort level?</h1>
         <p>
           Choose the highest level you feel confident in - you can always adjust
           later.
         </p>
       </div>
-      <div style={{ display: "flex" }}>
+      <div className="forthpagestyle" style={{ display: "flex" }}>
         {options.map((item, index) => {
           return (
             <div
-            className="pagedivstyle"
+            className="forthpagedivstyle"
               onClick={() => {
                 setCurrentPage(currentPage + 1);
               }}
@@ -60,7 +60,7 @@ export default function ForthPage({ setCurrentPage, currentPage }) {
               }}
             >
               <h3>{item.question}</h3>
-              <strong>{item.title}</strong>
+              <i style={{fontWeight:"bold"}}>{item.title}</i>
               <p>{item.text}</p>
             </div>
           );

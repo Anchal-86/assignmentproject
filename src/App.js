@@ -43,6 +43,7 @@ function App() {
         <Typography>
           <ArrowLeftIcon
             sx={{
+              cursor:"pointer",
               display: currentPage === 1 || currentPage === 6 ? "none" : "flex",
             }}
             onClick={() => {

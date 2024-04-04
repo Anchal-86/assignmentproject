@@ -10,7 +10,7 @@ export default function LoadingPage() {
           <CircularProgress />
         </Box>
       </div>
-      <div style={{width:"400px"}}>
+      <div className="loadingpagestyle" style={{width:"400px"}}>
         <h3>
             Finding learning path recommendations for you based on your responses
         </h3>
